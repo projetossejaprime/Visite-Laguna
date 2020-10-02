@@ -32,7 +32,7 @@ body{
     background-size: cover;
 }
 .section-1::before{
-    height: 700px;
+    height: 800px;
     content: '';
     position: absolute;
     left: 0;
@@ -180,6 +180,7 @@ body{
 /* Seção 2 */
 
 .section-2{
+    margin: 160px 0;
     height: auto;
     display: flex !important;
     flex-direction: column !important;
@@ -203,7 +204,6 @@ body{
 
 .col-texto-s2{
     height: auto;
-    margin-top: 160px;
 
     display: flex;
     flex-direction: column;
@@ -231,6 +231,124 @@ body{
     font-weight: 500;
     line-height: 2.5rem;
 }
+
+/* Seção 3 */
+
+.section-3 .titulo .h2-s3 h2{
+    font-size: 2.8rem;
+    font-weight: 600 !important;
+    text-align: center;
+    color: var(--primaria);
+
+    width: 60%;
+    margin: 80px auto;
+}
+
+.section-3 .conteudo{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.section-3 .conteudo .card-s3{
+    border-radius: 8px;
+
+    margin: 20px;
+    margin-bottom: 25px;
+
+    box-shadow: rgba(0, 0, 0, 0.300) 0 0 70px 0;
+    
+    padding: 0;
+}
+
+.section-3 .conteudo .card-s3 .img-s3{
+    width: 100%;
+    height: 250px;
+}
+
+.section-3 .conteudo .card-s3 .img-s3 img{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+
+.section-3 .conteudo .card-s3 h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primaria);
+
+    margin: 40px 0;
+}
+
+.section-3 .conteudo .card-s3 ul{
+    padding: 0 40px;
+}
+
+.section-3 .conteudo .card-s3 ul li{
+    list-style: none;
+
+    line-height: 1.6rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+
+    margin-bottom: 25px;
+}
+
+.section-3 .conteudo .card-s3 ul li span{
+    padding: 0 20px;
+}
+
+/* Section 4 */
+
+.section-4{
+    background-color: var(--primaria);
+}
+
+.section-4 .texto-s4{
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-4 .texto-s4 h3{
+    width: 70%;
+    margin-bottom: 60px;
+
+    color: var(--branco);
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.section-4 .texto-s4 .btn-s4{
+    margin: 0 auto;
+    height: 80px;
+    width: 50%;
+
+    background-color: var(--secundaria);
+
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--branco);
+    text-transform: uppercase;
+
+    box-shadow: rgba(0, 0, 0, 0.300) 0 0 60px 0;
+
+    border: 2px var(--secundaria) solid;
+}
+.section-4 .texto-s4 .btn-s4:hover{
+    color: var(--secundaria);
+    background-color: rgba(255, 255, 255, 0);   
+}
+
+/* Seção 5 */
+
 
 /* Smartphones */
 
