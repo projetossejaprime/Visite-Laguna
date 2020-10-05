@@ -229,7 +229,7 @@ body{
 .texto-s2 p{
     font-size: 1.5rem;
     font-weight: 500;
-    line-height: 2.5rem;
+    line-height: 2.4rem;
 }
 
 /* Seção 3 */
@@ -349,6 +349,262 @@ body{
 
 /* Seção 5 */
 
+.section-5 .titulo .h2-s5{
+    margin: 80px auto;
+}
+
+.section-5 .titulo .h2-s5 h2{
+    color: var(--primaria);
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.section-5 .conteudo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-bottom: 80px;
+}
+
+.card-s5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.card-s5 .icon-s5{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-s5 .icon-s5 img{
+    width: 25%;
+    height: auto;
+    
+    margin: auto 0;
+}
+
+.card-s5 .sp{
+    width: 100%;
+    height: 157px;
+}
+
+.card-s5 .sp img{
+    width: 50%;
+}
+
+.card-s5 h3{
+    margin: 20px 0;
+    color: var(--primaria);
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card-s5 p{
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--preto);
+
+    text-align: center;
+    line-height: 1.8rem;
+
+    width: 80%;
+}
+
+/* Section 6 */
+
+.section-6{
+    background-color: var(--primaria);
+}
+
+.section-6 .texto-s6{
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-6 .texto-s6 h3{
+    width: 70%;
+
+    color: var(--branco);
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.section-6 .texto-s6 p{
+    width: 60%;
+    margin-bottom: 60px;
+
+    color: var(--branco);
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.section-6 .texto-s6 .btn-s6{
+    margin: 0 auto;
+    height: 80px;
+    width: 50%;
+
+    background-color: var(--secundaria);
+
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--branco);
+    text-transform: uppercase;
+
+    box-shadow: rgba(0, 0, 0, 0.300) 0 0 60px 0;
+
+    border: 2px var(--secundaria) solid;
+}
+.section-6 .texto-s6 .btn-s6:hover{
+    color: var(--secundaria);
+    background-color: rgba(255, 255, 255, 0);   
+}
+
+/* Seção 7 */
+
+.section-7{
+    padding-top: 20px !important;
+    padding: 0;
+
+    height: auto;
+    background-image: url(../images/banner-s7.png);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.section-7 .row{
+    width: 100%;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+}
+
+/* Coluna Texto */
+
+.col-texto-s7{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    height: 100vh;
+}
+
+.texto-s7{
+    width: 80%;
+}
+
+.texto-s7 h3{
+    color: var(--primaria);
+    font-weight: bold;
+    font-size: 2.4rem;
+
+    text-shadow: rgba(0, 0, 0, 0.300) 0 0 60px;
+}
+
+/* Coluna Formulario */
+
+.col-formulario-s7{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    height: 100vh;
+}
+
+.logo-s7-resp{
+    display: none;
+}
+
+.logo-s7{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.logo-s7 img{
+    width: 50%;
+    height: auto;
+    
+    margin-bottom: 20px;
+}
+
+.formulario-s7{
+    background: var(--primaria);
+    width: 70%;
+    min-width: 300px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.300) 0 0 20px 0;
+}
+
+.formulario-s7 form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario-s7 form p{
+    padding: 10px 45px;
+    color: var(--branco);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.formulario-s7 form .f-s7-input{
+    width: 90%;
+    height: 60px;
+    border: none;
+    border-radius: 3px;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+    
+    transition: .2s ease-out;
+}
+.formulario-s7 form .f-s7-input:focus{
+    box-shadow: var(--secundaria) 0 0 10px 0;
+}
+.formulario-s7 form .f-s7-button{
+    width: 90%;
+    height: 70px;
+    border: 2px var(--secundaria) solid;
+    border-radius: 3px;
+    background-color: var(--secundaria);
+
+    cursor: pointer;
+    margin-bottom: 10px;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--branco);
+
+    transition: .4s ease-out;
+}
+.formulario-s7 form .f-s7-button:hover{
+    color: var(--secundaria);
+    background-color: rgba(255, 255, 255, 0);    
+}
 
 /* Smartphones */
 
@@ -406,7 +662,7 @@ body{
     }
 
     .texto-s1 h1{
-        font-size: 2.5rem !important;
+        font-size: 2.4rem !important;
         text-align: center !important;
     }
     .texto-s1 h1 small{
@@ -431,7 +687,7 @@ body{
     }
 
     .formulario-s1{ /**/
-        width: 80%;
+        width: 90%;
         min-width: 300px;
         border-radius: 8px;
         box-shadow: rgba(0, 0, 0, 0.300) 0 0 20px 0;
@@ -452,7 +708,13 @@ body{
     }
 
     .formulario-s1 form .f-s1-input{
+        height: 50px !important;
         margin-bottom: 10px !important;
+    }
+
+    .formulario-s1 form .f-s1-button{
+        font-size: 1.2rem;
+        height: 60px !important;
     }
 
     .formulario-s1 form .f-s1-button:active{
@@ -463,22 +725,25 @@ body{
     /* Seção 2 */
 
     .section-2{
+        position: relative;
+
         height: auto !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
+
+        margin: 0 auto !important;
     }
     .section-2::before{
         background-image: url(../images/banner-s2.png);
         background-size: cover;
-        height: 800px;
+        height: auto !important;
         content: '';
         position: absolute;
         left: 0;
-        top: 820px;
         right: 0;
-        bottom: 0;
+        top: -120px;
         opacity: 1;
     }
 
@@ -510,11 +775,134 @@ body{
     }
 
     .texto-s2 h2{
-        font-size: 2.5rem !important;
+        font-size: 2.4rem !important;
         margin-bottom: 50px !important;
     }
     .texto-s2 p{
+        padding: 50px 0 !important;
         font-size: 1.2rem !important;
         line-height: 1.7rem !important;
     }
+
+    /* Seção 3 */
+
+    .section-3 .titulo .h2-s3 h2{
+        font-size: 2rem;
+        font-weight: 600 !important;
+        text-align: center;
+        color: var(--primaria);
+    
+        width: 90%;
+        margin: 80px 20px !important;
+    }
+    
+    .section-3 .conteudo .card-s3 h2{
+        font-size: 1.4rem;
+    }
+
+    .section-3 .conteudo .card-s3 ul{
+        padding: 0 15px !important;
+        padding-bottom: 30px !important;
+    }
+    
+    .section-3 .conteudo .card-s3 ul li{
+        line-height: 1.2rem !important;
+        font-size: 1.2rem !important;
+        text-align: center !important;
+    }
+
+    /* Seção 4 */
+
+    .section-4 .texto-s4 h3{
+        width: 90% !important;
+        font-size: 1.8rem !important;
+    }
+
+    .section-4 .texto-s4 .btn-s4{
+        margin: 0 auto;
+        height: 60px;
+        width: 80%;
+        font-size: 1rem !important;
+    }
+    
+    /* Seção 5 */
+
+    .card-s5{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        margin-bottom: 60px;
+    }
+
+    .card-s5 .sp{
+        height: 60px !important;
+    }
+    
+    .card-s5 .sp img{
+        margin-bottom: 0 !important;
+    }
+    
+    .card-s5 p{
+        font-size: 1.2rem !important;
+        width: 90% !important;
+    }
+
+    /* Seção 6 */
+
+    .section-6 .texto-s6 h3{
+        width: 90% !important;
+        font-size: 1.8rem !important;
+    }
+
+    .section-6 .texto-s6 p{
+        width: 90% !important;
+        font-size: 1.4rem !important;
+    }
+
+    .section-6 .texto-s6 .btn-s6{
+        margin: 0 auto;
+        height: 60px;
+        width: 90%;
+        font-size: 1rem !important;
+    }
+    /* Seção 7 */
+
+    .section-7 .col-texto-s7 .texto-s7 h3{
+        width: 100%;
+        font-size: 1.6rem !important;
+    }
+
+    /* Coluna Formulario */
+
+    .col-formulario-s7{
+        height: auto !important;
+        margin-bottom: 100px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .formulario-s7{
+        width: 90% !important;
+        min-width: 300px !important;
+    }
+
+    .formulario-s7 form p{
+        padding: 10px 15px !important;
+        font-size: 1rem !important;
+        line-height: normal !important;
+    }
+
+    .formulario-s7 form .f-s7-input{
+        height: 50px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .formulario-s7 form .f-s7-button{
+        font-size: 1.2rem !important;
+        height: 60px !important;
+    }
+
 }
