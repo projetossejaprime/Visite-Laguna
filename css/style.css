@@ -406,10 +406,15 @@ body{
 .bg-img-s4{
     position: relative;
     height: 613px;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 .bg-img-s4 img{
-    width: 100%;
+    max-height: 600px;
+    width: auto;
 }
 
 
@@ -1087,7 +1092,7 @@ body{
     }
     
     .bg-img-s4{
-        display: none;
+        display: none !important;
     }
 
     /* Btn wpp */
@@ -1541,7 +1546,7 @@ body{
     /* Seção 4 */
 
     .bg-img-s4{
-        display: none;
+        display: none !important;
     }
 
     /* Btn wpp */
@@ -2004,6 +2009,14 @@ body{
  
     /* Coluna Formulario */
 
+    .col-texto-s8 .texto-s8 h3{
+        font-size: 2rem !important;
+    }
+
+    .col-texto-s8 .tempo-s8 h3{
+        font-size: 2rem !important;
+    }
+
     .col-formulario-s8{
         height: auto !important;
         margin: auto 0 !important;
@@ -2197,8 +2210,9 @@ body{
     .section-2{
         position: relative;
 
-        margin: 300px 0;
+        margin: 100px 0;
         height: auto;
+        min-height: 380px;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
@@ -2207,14 +2221,15 @@ body{
     .section-2::before{
         background-image: url(../images/banner-s2.png);
         background-size: cover;
-        height: 980px;
+        height: 760px;
         content: '';
         position: absolute;
         left: 0;
-        top: -480px;
+        top: -70%;
         right: 0;
         bottom: 0;
         opacity: 1;
+
     }
 
     /* Coluna Texto */
@@ -2247,6 +2262,29 @@ body{
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 2.4rem;
+    }
+
+    /* Coluna Imagem */
+
+    .col-img-s2{
+        display: flex;
+        justify-content: center;
+
+        min-height: 280px;
+    }
+
+    .img-s2{
+        position: absolute;
+        top: -35px;
+        max-height: 480px;
+        overflow: hidden;
+    }
+    
+    .img-s2 img{
+        margin: 0 auto;
+        width: 70%;
+        z-index: -23;
+        display: block;
     }
 
     /* Seção 3 */
