@@ -1055,8 +1055,17 @@ body{
     }
 
     .bg-img-s3{
-        display: none;
+        margin-top: 120px;
+        top: 0 !important;
+        bottom: 0 !important;
+        height: auto !important;
+        min-height: 300px;
     }
+
+    .bg-img-s3 img{
+        width: 100%;
+    }   
+
 
     /* Seção 4 */
     
@@ -1092,7 +1101,30 @@ body{
     }
     
     .bg-img-s4{
-        display: none !important;
+        margin-top: 0;
+        top: 0 !important;
+        height: auto !important;
+        min-height: 300px;
+    }
+
+    .bg-img-s4::before{
+        position: absolute;
+        right: 0;
+        left: 15%;
+        bottom: 0;
+        content: "";
+        height: 100%;
+        max-height: 350px;
+        background-image: url(../images/img-s4.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        z-index: 0;
+    }
+
+    .bg-img-s4 img{
+        width: 100%;
     }
 
     /* Btn wpp */
