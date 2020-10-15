@@ -1,5 +1,6 @@
 *{
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
 textarea:focus, input:focus, select:focus {
@@ -1614,6 +1615,16 @@ body{
     .section-7 .texto-s7 .btn-s7{ 
         min-width: 550px;
     } 
+
+    /* Seção 8 */
+
+    .col-texto-s8{
+        margin: 60px auto !important;
+    }
+
+    .tempo-s8{
+        margin: 60px !important;
+    }
 
     /* Coluna Formulario */
 
