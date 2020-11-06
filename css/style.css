@@ -13,9 +13,11 @@ textarea:focus, input:focus, select:focus {
     --primaria: rgb(0, 54, 222);
     --primaria-claro: rgb(63,104,255);
     --secundaria:  orange;
+    --secundaria-escuro: rgb(245, 110, 0);
 
     --verde: rgb(0, 218, 0);
 
+    --gradiente-linear: linear-gradient(45deg, rgba(255,84,79,1) 0%, rgba(250,209,38,1) 100%);
     --gradiente-radial-primario: radial-gradient(circle, rgba(63,104,255,1) 70%, rgba(52,81,193,1) 100%, rgba(0,54,222,1) 100%);
     --branco: white;
     --preto: black;
@@ -693,157 +695,92 @@ body{
 /* Seção 8 */
 
 .section-8{
-    padding-top: 20px !important;
-    padding: 0;
-
-    height: auto;
-    background-image: url(../images/banner-s8.png);
-    background-size: cover;
-    background-position-x: center;
+    padding: 0 !important;
+    background: var(--gradiente-linear);
 }
 
 .section-8 .row{
     width: 100%;
-    box-sizing: border-box !important;
-    margin: 0 !important;
+    margin: 0;
 }
 
-/* Coluna Texto */
-
-.col-texto-s8{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    box-sizing: border-box;
-
-    height: 100vh;
+.section-8 .col-conteudo-s8{
+    padding: 80px 0 80px 60px;
 }
 
-.texto-s8{
-    width: 100%;
-}
-
-.texto-s8 h3{
-    color: var(--primaria);
+.section-8 .col-conteudo-s8 h3{
+    color: var(--preto);
+    font-size: 2rem;
     font-weight: bold;
-    font-size: 2.4rem;
-
-    text-shadow: rgba(0, 0, 0, 0.300) 0 0 60px;
-    text-align: left;
-
-    margin: 0 0 0 auto;
-    width: 80% !important;
 }
 
-.tempo-s8{
-    margin-top: 25px;
+.section-8 .col-conteudo-s8 h3 span{
+    color: var(--branco);
+    font-size: 3.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-.tempo-s8 h3{
-    margin: 0 auto;
-    width: 50%;
+.section-8 .col-conteudo-s8 p{
+    width: 80%;
+    margin: 50px 0;
+    color: var(--branco);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
 
-    padding: 10px;
-    font-weight: 600;
-    font-size: 2.8rem;
-    text-align: center;
-    color: red;
+.section-8 .col-conteudo-s8 p span{
+    color: var(--branco);
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: var(--secundaria-escuro);
+}
+
+.section-8 .col-conteudo-s8 p span.inverter{
+    color: var(--secundaria-escuro);
+    font-weight: 800;
+    text-transform: uppercase;
     background-color: var(--branco);
 }
 
-/* Coluna Formulario */
+.section-8 .col-conteudo-s8 .btn-saber-mais-s8{
+    width: 30%;
+    max-width: 250px;
 
-.col-formulario-s8{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-
-    height: 100vh;
-}
-
-.logo-s8-resp{
-    display: none;
-}
-
-.logo-s8{
-    display: flex;
-    justify-content: center;
-    width: 70%;
-}
-
-.logo-s8 img{
-    width: 50%;
-    height: auto;
-    
-    margin-bottom: 20px;
-}
-
-.formulario-s8{
-    background: var(--primaria);
-    min-width: 300px;
-    max-width: 450px;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.300) 0 0 20px 0;
-}
-
-.formulario-s8 form{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.formulario-s8 form p{
-    padding: 10px 45px;
+    padding: 15px 20px;
     color: var(--branco);
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 500;
     font-size: 1.6rem;
-    line-height: 2rem;
-}
+    font-weight: 700;
+    text-transform: uppercase;
 
-.formulario-s8 form .f-s8-input{
-    width: 90%;
-    height: 60px;
-    border: none;
-    border-radius: 3px;
-
-    margin-bottom: 20px;
-
-    text-align: center;
-    
-    transition: .2s ease-out;
-}
-.formulario-s8 form .f-s8-input:focus{
-    box-shadow: var(--branco) 0 0 10px 0;
-}
-
-.formulario-s8 form .f-s8-button{
-    width: 90%;
-    height: 70px;
-    border: 2px var(--secundaria) solid;
-    border-radius: 3px;
     background-color: var(--secundaria);
+    border: 1px solid var(--secundaria) !important;
+    border-radius: 50px;
 
     cursor: pointer;
-    margin-bottom: 10px;
+    transition: .2s ease-out;
+}
 
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5rem;
+.section-8 .col-conteudo-s8 .btn-saber-mais-s8:hover{
     color: var(--branco);
 
-    transition: .4s ease-out;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid var(--branco) !important;
+    border-radius: 50px;
 }
-.formulario-s8 form .f-s8-button:hover{
-    color: var(--secundaria);
-    background-color: rgba(255, 255, 255, 0);    
+
+.section-8 .img-s8{
+    padding-right: 0 !important;
 }
+
+.section-8 .img-s8 img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 150%;
+    max-width: 500px;
+}
+
 
 /* Smartphones */
 
@@ -1286,107 +1223,40 @@ body{
 
     /* Seção 8 */
 
-    /* Coluna Texto */
-
-    .texto-s8 h3{
-        color: var(--primaria);
-        font-weight: 600;
-        font-size: 1.6rem;
-
-        text-shadow: rgba(0, 0, 0, 0.300) 0 0 60px;
-        text-align: center;
-
-        margin: 0 auto !important;
-        width: 80% !important;
-    }
-
-
-    .tempo-s8 h3{
-        margin: 0 auto;
-        width: 80%;
-
-        padding: 10px;
-        font-weight: 600;
-        font-size: 1.8rem;
-        text-align: center;
-        color: red;
-        background-color: var(--branco);
-    }
-
-    /* Coluna Formulario */
-
-    .col-formulario-s8{
+    .section-8 .col-conteudo-s8{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        box-sizing: border-box;
-
-        height: auto;
+        padding: 30px 20px;
     }
 
-    .logo-s8-resp{
+    .section-8 .col-conteudo-s8 h3{
+        font-size: 1.2rem !important;
+    }
+
+    .section-8 .col-conteudo-s8 h3 span{
+        font-size: 2rem !important;
+    }
+
+    .section-8 .col-conteudo-s8 p{
+        font-size: 1.2rem;
+        
+        width: 100%;
+        margin: 30px 0 !important;
+    }
+
+    .section-8 .col-conteudo-s8 .btn-saber-mais-s8{
+        width: 200px !important;
+        padding: 10px 15px;
+
+        font-size: 1.2rem;
+        margin: 0 auto !important;
+    }
+
+    .section-8 .img-s8{
         display: none;
     }
-
-    .logo-s8{
-        display: flex;
-        justify-content: center;
-        width: 70%;
-    }
-
-    .logo-s8 img{
-        width: 50%;
-        height: auto;
-        
-        margin-bottom: 20px;
-    }
-
-    .col-formulario-s8{
-        height: auto !important;
-        margin-bottom: 100px !important;
-
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-    }
-
-    .formulario-s8{ /**/
-        width: 90%;
-        min-width: 300px;
-        border-radius: 8px;
-        box-shadow: rgba(0, 0, 0, 0.300) 0 0 20px 0;
-    }
-
-    .formulario-s8 form{ /**/
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .formulario-s8 form p{
-        padding: 10px 15px !important;
-        font-size: 1rem !important;
-        line-height: normal !important;
-    }
-
-    .formulario-s8 form .f-s8-input{
-        height: 50px !important;
-        margin-bottom: 10px !important;
-    }
-
-    .formulario-s8 form .f-s8-button{
-        font-size: 1.2rem;
-        height: 60px !important;
-    }
-
-    .formulario-s8 form .f-s8-button:active{
-        color: var(--secundaria) !important;
-        background-color: rgba(255, 255, 255, 0) !important;    
-    }
-
 
 }
 
@@ -1618,61 +1488,39 @@ body{
 
     /* Seção 8 */
 
-    .col-texto-s8{
-        margin: 60px auto !important;
-    }
-
-    .tempo-s8{
-        margin: 60px !important;
-    }
-
-    /* Coluna Formulario */
-
-    .col-formulario-s8{
-        height: auto !important;
-        margin: 0 auto;
-        margin-bottom: 150px !important;
-
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-    }
-
-    .formulario-s8{
-        width: 100%;
-        min-width: 300px;
-        max-width: 400px;
-        border-radius: 8px;
-        box-shadow: rgba(0, 0, 0, 0.300) 0 0 20px 0;
-    }
-
-    .formulario-s8 form{ /**/
-        padding: 15px;
+    .section-8 .col-conteudo-s8{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 30px 20px;
     }
 
-    .formulario-s8 form p{
-        padding: 10px 15px !important;
-        font-size: 1rem !important;
-        line-height: normal !important;
+    .section-8 .col-conteudo-s8 h3{
+        font-size: 1.2rem !important;
     }
 
-    .formulario-s8 form .f-s8-input{
-        height: 50px !important;
-        margin-bottom: 10px !important;
+    .section-8 .col-conteudo-s8 h3 span{
+        font-size: 2rem !important;
     }
 
-    .formulario-s8 form .f-s8-button{
+    .section-8 .col-conteudo-s8 p{
         font-size: 1.2rem;
-        height: 60px !important;
+        
+        width: 100%;
+        margin: 30px 0 !important;
     }
 
-    .formulario-s8 form .f-s8-button:active{
-        color: var(--secundaria) !important;
-        background-color: rgba(255, 255, 255, 0) !important;    
+    .section-8 .col-conteudo-s8 .btn-saber-mais-s8{
+        width: 200px !important;
+        padding: 10px 15px;
+
+        font-size: 1.2rem;
+        margin: 0 auto !important;
+    }
+
+    .section-8 .img-s8{
+        display: none;
     }
 }
 
@@ -2050,54 +1898,31 @@ body{
 
     /* Seção 8 */
  
-    /* Coluna Formulario */
-
-    .col-texto-s8 .texto-s8 h3{
-        font-size: 2rem !important;
+    .section-8 .col-conteudo-s8 .btn-saber-mais-s8{
+        width: 50%;
+        max-width: 250px;
+    
+        padding: 15px 20px;
     }
-
-    .col-texto-s8 .tempo-s8 h3{
-        font-size: 2rem !important;
+    
+    .section-8 .col-conteudo-s8 .btn-saber-mais-s8:hover{
+        color: var(--secundaria);
+    
+        background-color: rgba(255, 255, 255, 0);
+        border: 1px solid var(--secundaria) !important;
+        border-radius: 50px;
     }
-
-    .col-formulario-s8{
-        height: auto !important;
-        margin: auto 0 !important;
-
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
+    
+    .section-8 .img-s8{
+        padding-right: 0 !important;
     }
-
-    .formulario-s8{ /**/
-        min-width: 300px;
-        max-width: 400px;
-        border-radius: 8px;
-        box-shadow: rgba(0, 0, 0, 0.300) 0 0 20px 0;
-    }
-
-    .formulario-s8 form{ /**/
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .formulario-s8 form p{
-        padding: 10px 15px !important;
-        font-size: 1rem !important;
-        line-height: normal !important;
-    }
-
-    .formulario-s8 form .f-s8-input{
-        height: 50px !important;
-        margin-bottom: 10px !important;
-    }
-
-    .formulario-s8 form .f-s8-button{
-        font-size: 1.2rem !important;
-        height: 60px !important;
+    
+    .section-8 .img-s8 img{
+        position: absolute;
+        right: 0 !important;
+        bottom: 0;
+        width: 170%;
+        max-width: 500px;
     }
 }
 
