@@ -143,7 +143,7 @@ section .row{
 
         color: var(--branco);
         font-weight: bold;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
 
         margin: 0;
     }
@@ -153,8 +153,9 @@ section .row{
     }
     
     .wpp-header p > span.wpp-icon{
-        font-size: 3rem;
+        font-size: 2rem;
     }
+
 /* Seção 1 */
 
 .section-1{
@@ -162,11 +163,20 @@ section .row{
 
     height: auto;
     background-color: var(--primaria);
+    position: relative;
 }
 
 .section-1 .row{
     width: 100%;
     box-sizing: border-box !important;
+}
+
+.onda{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
 }
 
 /* Coluna Texto */
@@ -318,25 +328,19 @@ section .row{
 
 .section-2{
     position: relative;
+    background-color: var(--secundaria);
 
-    margin: 160px 0;
     height: auto;
+    min-height: 540px;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
 }
-.section-2::before{
-    background-image: url(../images/banner-s2.png);
-    background-size: cover;
-    height: 780px;
-    content: '';
-    position: absolute;
-    left: 0;
-    top: -300px;
-    right: 0;
-    bottom: 0;
-    opacity: 1;
+
+.section-2 .row{
+    height: 100% !important;
+    max-height: unset !important;
 }
 
 /* Coluna Texto */
@@ -362,10 +366,9 @@ section .row{
 }
 
 .texto-s2 h2{
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     font-weight: bold;
 }
-
 
 .texto-s2 p{
     font-size: 1.5rem;
@@ -378,21 +381,18 @@ section .row{
 }
 
 .col-img-s2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
 
-.img-s2{
-    position: absolute;
-    top: 0;
-    max-height: 480px;
-    overflow: hidden;
-}
-
-.img-s2 img{
+.col-img-s2 img{
     margin: 0 auto;
-    width: 70%;
-    z-index: -23;
-    display: block;
+    width: auto;
+    height: 550px !important;
+    position: absolute;
+    bottom: -85px;
 }
 
 /* Seção 3 */
@@ -407,6 +407,10 @@ section .row{
 .section-3 > .row{
     height: 100% !important;
     max-height: 960px ;
+}
+
+.lista-s3-mobile{
+    display: none !important;
 }
 
 .section-3 .lista-s3{
@@ -504,7 +508,7 @@ section .row{
     color: var(--secundaria);
 }
 
-/* Section 4 */
+/* Seção 4 */
 
 .section-4{
     background-color: var(--secundaria);
@@ -513,6 +517,10 @@ section .row{
 
 .section-4 > .row{
     height: 100% !important;
+}
+
+.lista-s4-mobile{
+    display: none !important;
 }
 
 .section-4 .lista-s4{
@@ -792,7 +800,7 @@ section .row{
     width: 80%;
 }
 
-/* Section 6 */
+/* Seção 6 */
 
 .section-6{
     padding: 120px 0;
@@ -861,7 +869,6 @@ section .row{
     max-width: 80px;
     max-height: 140px;
 }
-
 
 /* Seção 7 */
 
@@ -1031,16 +1038,349 @@ section .row{
     max-width: 500px;
 }
 
+.random{
+    transition: .4s ease-in-out;
+}
+
+.transition{
+    transition: .4s ease;
+}
+
+
+/* Footer */
+
+.footer{
+    background-color: var(--preto);
+
+    height: auto;
+}
+
+.footer .row{
+    padding: 40px 0 !important;
+}
+
+.footer .footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .footer-logo > img{
+        width: 100%;
+    }
+
+.footer-conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+    .footer-conteudo > .bloco-contatos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+
+        padding: 30px !important;
+    }
+
+        .bloco-contatos > .contato-1{
+            display: flex;
+            flex-direction: row;
+
+            width: 40%;
+
+            padding: 10px;
+        }
+        
+            .contato-1 > .contato-1-icon{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 30%;
+
+                margin: 0 15px;
+            }
+
+                .contato-1-icon > img{
+                    max-height: 40px;
+                }
+
+            .contato-1 > .contato-1-content{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+                .contato-1-content > h3{
+                    color: white;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+
+                    margin: 0;
+                }
+
+                .contato-1-content > p{
+                    color: white;
+                    font-size: 1rem;
+                    margin: 0;
+                }
+
+        .bloco-contatos > .contato-2{
+            display: flex;
+            flex-direction: row;
+            
+            width: 40%;
+
+            padding: 10px;
+        }
+        
+            .contato-2 > .contato-2-icon{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 15%;
+
+                margin: 0 15px;
+            }
+
+                .contato-2-icon > img{
+                    max-width: 40px; 
+                }
+
+            .contato-2 > .contato-2-content{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+                .contato-2-content > h3{
+                    color: white;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+
+                    margin: 0;
+                }
+
+                .contato-2-content > p{
+                    color: white;
+                    font-size: 1rem;
+                    margin: 0;
+                }
+
+        
+        .bloco-contatos > .contato-3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+            .contato-3 > .contato-3-btn{     
+                color: white;
+                font-size: 1rem;
+                font-weight: bold;
+                
+                background: green;
+
+                width: 200px;
+
+                border: none;
+                border-radius: 8px;
+
+                padding: 10px 20px;
+
+                cursor: pointer;
+            }
+
+            .contato-3 > .contato-3-btn:hover{
+                background-color: rgb(12, 197, 12);
+            }
+
+    .footer-conteudo > .bloco-sociais{
+        display: flex;
+        flex-direction: row;
+        align-items: center;    
+        justify-content: center;
+
+        width: 100%;
+
+        padding: 15px !important;
+    }
+
+        .bloco-sociais > .sociais-btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 60px;
+            height: 60px;
+
+            border: 2px solid white;
+            border-radius: 50%;
+
+            margin: 0 15px;
+
+            cursor: pointer;
+
+            transition: .2s ease-out;
+        }
+
+        .bloco-sociais > .sociais-btn:hover{
+            border: 2px solid var(--secundaria);
+        }
+
+        .bloco-sociais > .sociais-btn:hover a{
+            color: var(--secundaria) !important;
+        }
+
+            .sociais-btn > a{
+                color: white !important;
+                font-size: 1.6rem !important;
+                
+                transition: .2s ease-out;
+            }
+
+.row.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 80px !important;
+
+    background-color: rgb(20, 20, 20);
+
+    padding: 0 !important;
+}
+
+    .row.copyright > h2{
+        color: white;
+        font-size: 1rem;
+
+        margin: 0;
+    }
+
 /* Smartphones */
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    /* Seção 1 */
+
+    header{
+        height: 60px !important;
+    }
+    
+    header .row{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 0 !important;
+    }
+
+    .wpp-header p{
+        font-size: .9rem !important;
+        text-align: center;
+    }
+
+    .wpp-header p span{
+        font-size: 1.6rem;
+    }
+
+    /* Footer Smartphones*/
+    
+    .footer .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .footer .copyright > h2{
+        font-size: .8rem !important;
+
+        text-align: center;
+    }
+
+    .footer-logo > img{
+        width: 50%;
+
+        margin: 50px 0;
+    }
+
+    .footer-conteudo{
+        padding: 0 5px;
+    }
+
+    .footer-conteudo > .bloco-contatos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0 !important;
+    }
+    
+        .bloco-contatos > .contato-1{
+            width: 100% !important;
+            padding: 10px 0;
+        }
+
+            .contato-1 > .contato-1-icon{
+                width: 30px !important;
+                margin: 0 15px;
+            }
+
+                .contato-1-content > p{
+                    font-size: .8rem !important;
+                }
+
+        .bloco-contatos > .contato-2{
+            width: 100% !important;
+            padding: 10px 0;
+        }
+
+            .contato-2 > .contato-2-icon{
+                width: 30px !important;
+                margin: 0 15px;
+            }
+
+                .contato-2-content > p{
+                    font-size: .8rem !important;
+                }
+
+    .footer-conteudo > .bloco-sociais{
+        padding: 0 !important;
+    }
+
+        .bloco-sociais > .sociais-btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 50px;
+            height: 50px;
+
+            border-radius: 50%;
+
+            margin: 0 5px;
+
+            cursor: pointer;
+
+            transition: .2s ease-out;
+        }
+
+    /* Seção 1 Smartphones*/
+
+    .onda{
+        height: 80px;
+    }
 
     .section-1{ /**/
         padding: 0 !important;
         height: auto;
     }
-    /* Coluna Texto */
+    /* Coluna Texto Smartphones*/
 
     .col-texto-s1{
         height: auto !important;
@@ -1062,7 +1402,7 @@ section .row{
     }
 
     .logo-s1-resp img{
-        width: 50%;
+        width: 70%;
         height: auto;
         
         margin: 20px 0 !important;
@@ -1094,7 +1434,7 @@ section .row{
         display: none;
     }
 
-    /* Coluna Formulario */
+    /* Coluna Formulario Smartphones*/
 
     .col-formulario-s1{
         height: auto !important;
@@ -1141,7 +1481,7 @@ section .row{
         background-color: rgba(255, 255, 255, 0) !important;    
     }
 
-    /* Seção 2 */
+    /* Seção 2 Smartphones*/
 
     .section-2{
         position: relative;
@@ -1154,19 +1494,8 @@ section .row{
 
         margin: 0 auto !important;
     }
-    .section-2::before{
-        background-image: url(../images/banner-s2.png);
-        background-size: cover;
-        height: auto !important;
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: -160px;
-        opacity: 1;
-    }
 
-    /* Coluna Texto */
+    /* Coluna Texto Smartphones*/
 
     .col-texto-s2{
         margin-top: 50px;
@@ -1194,11 +1523,11 @@ section .row{
     }
 
     .texto-s2 h2{
-        font-size: 2.4rem !important;
-        margin-bottom: 50px !important;
+        font-size: 2rem !important;
+        margin-bottom: 5px !important;
     }
     .texto-s2 p{
-        padding: 50px 0 !important;
+        padding: 15px 0 !important;
         font-size: 1.2rem !important;
         line-height: 1.7rem !important;
     }
@@ -1207,15 +1536,34 @@ section .row{
         display: none;
     }
 
-    /* Seção 3 */
+    /* Seção 3 Smartphones*/
 
     .section-3{
         height: auto !important;
         max-height: unset !important;
+        padding: 0;
     }
 
     .section-3 .row{
         max-height: unset !important;
+    }
+
+    .lista-s3-desktop{
+        display: none !important;
+    }
+
+    .lista-s3-mobile{
+        display: block !important;
+    }
+
+    .section-3 .lista-s3{
+        padding-top: 15px !important;
+    }
+
+    .section-3 .lista-s3 h2{
+        font-size: 2.4rem;
+        font-weight: 600;
+        margin: 35px 0;
     }
 
     .section-3 .lista-s3 ul{
@@ -1240,56 +1588,86 @@ section .row{
 
     .section-3 .lista-s3 ul li{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-        width: 90%;
+        width: 85%;
         margin-bottom: 20px;
+        margin: 0 auto 25px;
 
         list-style: none !important;
-        font-size: 1.2rem;
+        font-size: 1rem;
+        text-align: center;
         color: var(--branco);
     }
 
-    .section-3 .lista-s3 ul li span{
-        display: flex;
-        align-items: center;
-        margin-right: 20px;
+    .section-3 .lista-s3 ul li .icone-s3{
+        width: 100%;
+        margin: 0 auto !important;
+    }
 
-        font-size: 2.4rem;
-        color: var(--secundaria);
+    .section-3 .lista-s3 ul li .icone-s3 img{
+        width: 80px;
+        margin: 15px auto !important;
     }
 
     .bg-img-s3{
-        margin-top: 120px;
+        display: none !important;
+        margin-top: 0;
         top: 0 !important;
         bottom: 0 !important;
         height: auto !important;
         min-height: 300px;
+        max-height: unset !important;
+        position: relative !important;
     }
 
     .bg-img-s3 img{
-        width: 100%;
+        display: none !important;
+        position: relative !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        max-height: 700px !important;
+        margin-top: 25px !important;
+        z-index: 200 !important;
     }   
 
-    /* Seção 4 */
+    /* Seção 4 Smartphones*/
 
     .section-4{
         height: auto !important;
         max-height: unset !important;
+        padding: 0;
     }
 
     .section-4 .row{
         max-height: unset !important;
     }
+
+    .lista-s4-desktop{
+        display: none !important;
+    }
+
+    .lista-s4-mobile{
+        display: block !important;
+    }
+
+    .section-4 .lista-s4{
+        padding: 0;
+    }
     
     .section-4 .lista-s4 .ul-s4{
-        height: 1200px !important;
+        height: auto !important;
         max-height: unset !important;
     }
 
     .section-4 .lista-s4 h2{
-        width: 60%;
-        margin: 0 auto;
+        font-size: 2.4rem;
+        font-weight: 600;
+        margin: 35px 0;
     }
 
     .section-4 .lista-s4 .ul-s4 ul{
@@ -1306,30 +1684,47 @@ section .row{
     
     .section-4 .lista-s4 .ul-s4 ul li{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
     
-        width: 90%;
+        width: 85%;
         margin-bottom: 20px;
+        margin: 0 auto 25px;
     
         list-style: none !important;
         font-size: 1rem;
-        font-weight: 600;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .section-4 .lista-s4 .ul-s4 ul li .icone-s4{
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100%;
+        margin: 0 auto !important;
+    }
+
+    .section-4 .lista-s4 .ul-s4 ul li .icone-s4 img{
+        width: 80px !important;
+        margin: 15px auto !important;
     }
 
     .section-4 .lista-s4 .ul-s4 ul li.li-s4-w100{
-        font-size: 1rem !important;
-    }
-
-    .section-4 .lista-s4 .ul-s4 ul .li-s4-w100{
         display: flex !important;
-        flex-direction: row !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
     
-        width: 90% !important;
+        width: 85% !important;
         margin-bottom: 20px !important;
+        margin: 0 auto 25px !important;
     
         list-style: none !important;
-        font-size: 1.2rem !important;
-        font-weight: 600 !important;
+        font-size: 1rem !important;
+        font-weight: 400 !important;
+        text-align: center !important;
     }
     
     .section-4 .lista-s4 .ul-s4 ul li span{
@@ -1342,6 +1737,7 @@ section .row{
     }
     
     .bg-img-s4{
+        display: none !important;
         margin-top: 0;
         top: 0 !important;
         height: auto !important;
@@ -1349,6 +1745,7 @@ section .row{
     }
 
     .bg-img-s4::before{
+        display: none !important;
         position: absolute;
         right: 0;
         left: 15%;
@@ -1368,7 +1765,7 @@ section .row{
         width: 100%;
     }
 
-    /* Btn wpp */
+    /* Btn wpp Smartphones*/
 
     .section-wpp{
         padding: 20px 20px 40px;
@@ -1424,8 +1821,22 @@ section .row{
         margin-right: 10px !important;
     }
 
-    /* Seção 5 */
+    /* Seção 5 Smartphones*/
     
+    .section-5 .titulo{
+        width: 100%;
+        padding: 0 !important;
+    }
+
+    .section-5 .titulo .h2-s5{
+        margin: 45px 0 !important;
+        padding: 0 !important;
+    }
+
+    .section-5 .titulo .h2-s5 h2{
+        font-size: 1.8rem;
+    }
+
     .section-5 .conteudo{
         height: auto;
         background: rgb(255,100,72);
@@ -1445,7 +1856,7 @@ section .row{
         background-size: cover;
     }
 
-    /* Seção 6 */
+    /* Seção 6 Smartphones*/
 
     .section-6{
         padding: 60px 0;
@@ -1457,11 +1868,11 @@ section .row{
         border-bottom-right-radius: 50px;
         border-top-right-radius: 50px;
 
-        width: 95%;
+        width: 100%;
 
         padding: 0 30px;
         color: var(--branco);
-        font-size: 2rem;
+        font-size: 1.4rem;
         font-weight: 600;
     }
 
@@ -1471,10 +1882,11 @@ section .row{
     }
 
     .section-6 .ul-s6 ul li{
-        font-size: 1.2rem;
+        font-size: 1rem;
         list-style: none !important;
 
         margin-bottom: 60px !important;
+        padding-bottom: 20px !important;
         width: 90%;
     }
 
@@ -1482,7 +1894,7 @@ section .row{
         margin: 0 20px 40px !important;
     }
 
-    /* Seção 7 */
+    /* Seção 7 Smartphones*/
 
     .section-7 .texto-s7{
         padding: 60px 0;
@@ -1543,7 +1955,7 @@ section .row{
         font-size: 2rem;
     }
 
-    /* Seção 8 Smartphone */
+    /* Seção 8 Smartphones */
 
     .section-8 .col-conteudo-s8{
         display: flex;
@@ -1583,16 +1995,135 @@ section .row{
 }
 
 /* Tablets */
+
 @media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
     
-    /* Seção 1 */
+    /* Footer */
+    
+    .footer .row{
+        display: flex !important;
+        flex-flow: row;
+        flex-direction: row !important;
+
+        padding: 10px 0 !important;
+    }
+
+    .footer .copyright > h2{
+        font-size: .8rem !important;
+
+        text-align: center;
+    }
+
+    .footer-logo{
+        width: 20%;
+    }
+
+    .footer-logo > img{
+        margin: 50px 0;
+    }
+
+    .footer-conteudo{
+        padding: 0 5px;
+    }
+
+    .footer-conteudo > .bloco-contatos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        padding: 0 !important;
+    }
+    
+        .bloco-contatos > .contato-1{
+            width: 100% !important;
+            max-width: 270px !important;
+            padding: 10px 0;
+        }
+
+            .contato-1 > .contato-1-icon{
+                width: 30px !important;
+                margin: 0 5px;
+            }
+
+                .contato-1-content > p{
+                    font-size: .8rem !important;
+
+                    overflow-wrap: break-word !important;
+                }
+
+        .bloco-contatos > .contato-2{
+            width: 100% !important;
+            max-width: 200px !important;
+            padding: 10px 0;
+        }
+
+            .contato-2 > .contato-2-icon{
+                width: 30px !important;
+                margin: 0 15px;
+            }
+
+                .contato-2-content{
+                    width: 100%;
+                }
+
+                .contato-2-content > h3{
+                    font-size: 1rem !important;
+
+                    width: 100% !important;
+                }
+
+                .contato-2-content > p{
+                    font-size: .8rem !important;
+                }
+
+        .bloco-contatos > .contato-3{
+            padding: 0 10px;
+            width: 160px !important;
+        }
+
+            .contato-3 > .contato-3-btn{
+                width: 100%;
+
+                font-size: 1rem;
+                font-weight: normal;
+
+                padding: 5px;
+            }
+
+    .footer-conteudo > .bloco-sociais{
+        padding: 0 !important;
+    }
+
+        .bloco-sociais > .sociais-btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 50px;
+            height: 50px;
+
+            border-radius: 50%;
+
+            margin: 0 5px;
+
+            cursor: pointer;
+
+            transition: .2s ease-out;
+        }
+
+    .onda{
+        height: 120px;
+    }
+
+    /* Seção 1 Tablets*/
 
     .section-1{
         padding: 0 !important;
         height: auto;
     }
 
-    /* Coluna Texto */
+    /* Coluna Texto Tablets*/
 
     .col-texto-s1{
         height: auto !important;
@@ -1640,7 +2171,7 @@ section .row{
         font-size: 1.2rem !important;
     }
 
-    /* Coluna Formulario */
+    /* Coluna Formulario Tablets*/
 
     .col-formulario-s1{
         height: auto !important;
@@ -1688,32 +2219,25 @@ section .row{
         background-color: rgba(255, 255, 255, 0) !important;    
     }
 
-    /* Seção 2 */
+    /* Seção 2 Tablets*/
 
     .section-2{
         position: relative;
 
         height: auto !important;
+        min-height: unset !important;
+        max-height: unset !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
 
         margin: 0 auto !important;
-    }
-    .section-2::before{
-        background-image: url(../images/banner-s2.png);
-        background-size: cover;
-        height: auto !important;
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: -120px;
-        opacity: 1;
+        padding: 0 !important;
+        overflow: hidden;
     }
 
-    /* Coluna Texto */
+    /* Coluna Texto Tablets*/
 
     .col-texto-s2{
         margin-top: 50px;
@@ -1730,7 +2254,7 @@ section .row{
     .col-texto-s2 .texto-s2{
         width: 100% !important;
 
-        padding: 0 5%;
+        padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1742,27 +2266,30 @@ section .row{
 
     .texto-s2 h2{
         font-size: 2.4rem !important;
-        margin-bottom: 50px !important;
     }
     .texto-s2 p{
-        padding: 50px 0 !important;
+        padding: 15px 0 !important;
         font-size: 1.2rem !important;
         line-height: 1.7rem !important;
     }
 
-    /* Imagem */
+    /* Imagem Tablets*/
 
     .col-img-s2{
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
+        position: relative !important;
     }
 
-    .img-s2{
-        position: relative;
+    .col-img-s2 img{
+        position: absolute;
+        top: 0;
+        width: auto;
+        height: 100% !important;
     }
 
-    /* Seção 3 */
+    /* Seção 3 Tablets*/     
 
     .bg-img-s3{
         display: none;
@@ -1772,29 +2299,206 @@ section .row{
         margin-left: 0 !important;
     }
 
-    /* Seção 4 */
+    /******************************/
+
+    .lista-s3-desktop{
+        display: none !important;
+    }
+
+    .lista-s3-mobile{
+        display: flex !important;
+    }
+
+    .section-3{
+        height: auto !important;
+        max-height: unset !important;
+        padding: 0;
+    }
+
+    .section-3 .row{
+        max-height: unset !important;
+    }
+
+    .section-3 .lista-s3{
+        padding-top: 15px !important;
+    }
+
+    .section-3 .lista-s3 h2{
+        font-size: 2.4rem;
+        font-weight: 600;
+        margin: 35px 0;
+    }
+
+    .section-3 .lista-s3 ul{
+        display: flex;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin: 40px auto;
+        padding: 0 !important;
+        width: 100%;
+    }
+
+    .section-3 .lista-s3 .li-s3-alt-mobile{
+        display: flex !important; 
+    }
+
+    .section-3 .bg-img-s3 .ul-s3-alt{
+        display: none !important;
+    }
+
+    .section-3 .lista-s3 ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 35%;
+        margin: 0 25px 25px 25px;
+
+        list-style: none !important;
+        font-size: 1rem;
+        text-align: center;
+        color: var(--branco);
+    }
+
+    .section-3 .lista-s3 ul li .icone-s3{
+        width: 100%;
+        margin: 0 auto !important;
+    }
+
+    .section-3 .lista-s3 ul li .icone-s3 img{
+        width: 60px;
+        margin: 15px auto !important;
+    }
+
+    /* Seção 4 Tablets*/
 
     .bg-img-s4{
         display: none !important;
     }
 
-    /* Btn wpp */
+    .lista-s4-desktop{
+        display: none !important;
+    }
+
+    .lista-s4-mobile{
+        display: flex !important;
+    }
+
+    /******************************/
+
+    .section-4{
+        height: auto !important;
+        max-height: unset !important;
+        padding: 0;
+    }
+
+    .section-4 .row{
+        max-height: unset !important;
+    }
+
+    .section-4 .lista-s4{
+        padding: 0;
+    }
+    
+    .section-4 .lista-s4 .ul-s4{
+        height: auto !important;
+        max-height: unset !important;
+    }
+
+    .section-4 .lista-s4 h2{
+        font-size: 2.4rem;
+        font-weight: 600;
+        margin: 35px 0;
+    }
+
+    .section-4 .lista-s4 .ul-s4 .lista-s4-mobile{
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        align-items: center;
+        justify-content: center !important;
+        padding: 0;
+        width: 100% !important;
+        height: 100% !important;
+        max-height: unset;
+    }
+    
+    .section-4 .lista-s4 .ul-s4 ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+    
+        width: 45%;
+        margin-bottom: 0 25px 25px 25px;
+    
+        list-style: none !important;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .section-4 .lista-s4 .ul-s4 ul li .icone-s4{
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100%;
+        margin: 0 auto !important;
+    }
+
+    .section-4 .lista-s4 .ul-s4 ul li .icone-s4 img{
+        width: 80px !important;
+        margin: 15px auto !important;
+    }
+
+    .section-4 .lista-s4 .ul-s4 ul li.li-s4-w100{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    
+        width: 85% !important;
+        margin-bottom: 20px !important;
+        margin: 0 auto 25px !important;
+    
+        list-style: none !important;
+        font-size: 1rem !important;
+        font-weight: 400 !important;
+        text-align: center !important;
+    }
+    
+    .section-4 .lista-s4 .ul-s4 ul li span{
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    
+        font-size: 2.4rem;
+        color: var(--primaria);
+    }
+
+    /* Btn wpp Tablets*/
 
     .section-wpp{
         padding: 40px 10px !important;
     }
 
     .texto-wpp p{
-        font-size: 2.4rem !important;
+        font-size: 2rem !important;
         line-height: 2.4rem !important;
+        margin-left: 35px;
     }
 
     .texto-wpp .btn-wpp{
         font-size: 1rem !important;
         width: 70% !important;
+        margin-left: 35px;
     }
 
-    /* Seção 5 */
+    /* Seção 5 Tablets*/
 
     .section-5 .titulo .h2-s5{
         margin: 80px auto;
@@ -1815,7 +2519,7 @@ section .row{
         max-width: 300px !important;
     }
 
-    /* Seção 6 */
+    /* Seção 6 Tablets*/
 
     .section-6 .titulo h3{
         margin-bottom: 80px;
@@ -1824,9 +2528,9 @@ section .row{
 
         width: 95%;
 
-        padding: 0 30px;
+        padding: 15px 30px;
         color: var(--branco);
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-weight: 600;
     }
 
@@ -1836,11 +2540,11 @@ section .row{
     }
 
     .section-6 .ul-s6 ul li{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         list-style: none !important;
 
         margin-bottom: 60px !important;
-        padding: 0 30px 60px;
+        padding: 0 30px 20px;
         width: 80%;
     }
 
@@ -1850,7 +2554,7 @@ section .row{
         max-width: 100px !important;
     }
 
-    /* Seção 7 */
+    /* Seção 7 Tablets*/
 
     .section-7 .texto-s7{
         padding: 60px 0;
@@ -1950,6 +2654,7 @@ section .row{
 }
 
 /* Telas Pequenas */
+
 @media only screen and (min-device-width : 1024px) and (max-device-width : 1340px){
     /* Seção 1 */
 
@@ -2325,6 +3030,7 @@ section .row{
 }
 
 /* Telas Maiores*/
+
 @media only screen  and (min-width : 1824px) {
 
     /* Seção 1 */
