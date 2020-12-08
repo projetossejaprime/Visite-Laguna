@@ -189,6 +189,7 @@ section .row{
     box-sizing: border-box;
 
     height: 100vh;
+    max-height: 850px;
 }
 
 .texto-s1{
@@ -242,6 +243,7 @@ section .row{
     box-sizing: border-box;
 
     height: 100vh;
+    max-height: 850px;
 }
 
 .logo-s1-resp{
@@ -1039,10 +1041,12 @@ section .row{
 }
 
 .random{
+    opacity: 1;
     transition: .4s ease-in-out;
 }
 
 .transition{
+    opacity: 0;
     transition: .4s ease;
 }
 
@@ -3033,35 +3037,17 @@ section .row{
 
 @media only screen  and (min-width : 1824px) {
 
-    /* Seção 1 */
-
-
-
     /* Seção 2 */
 
     .section-2{
         position: relative;
 
-        margin: 100px 0;
         height: auto;
         min-height: 380px;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
-    }
-    .section-2::before{
-        background-image: url(../images/banner-s2.png);
-        background-size: cover;
-        height: 760px;
-        content: '';
-        position: absolute;
-        left: 0;
-        top: -70%;
-        right: 0;
-        bottom: 0;
-        opacity: 1;
-
     }
 
     /* Coluna Texto */
@@ -3076,7 +3062,6 @@ section .row{
     }
 
     .col-texto-s2 .texto-s2{
-        padding: 0 2    0%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -3184,7 +3169,7 @@ section .row{
 
     .bg-img-s3 img{
         position: absolute;
-        top: -80px;
+        top: -50px;
         right: auto;
         z-index: 100;
     }

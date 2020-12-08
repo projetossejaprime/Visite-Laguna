@@ -75,7 +75,6 @@
     </section>
 
     <!-- Seção 02 -->
-    
     <section class="container-fluid section-2">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-img-s2">
@@ -566,13 +565,15 @@
         function randomico(){
         var estabelecimentos = ['HOTÉIS', 'POUSADAS', 'RESTAURANTES', 'EVENTOS', 'ATRATIVOS', 'TRANSLADO'];
         var estabelecimentosRandom = estabelecimentos[Math.floor(Math.random() * estabelecimentos.length )] ;
-            $(".random").html(estabelecimentosRandom); 
             $(".random").addClass('transition');
+            setTimeout(function() { 
+                $(".random").removeClass('transition');
+                $(".random").html(estabelecimentosRandom); 
+            }, 500);
         }
-
         setInterval(function(){
             randomico();
-        }, 6000);
+        }, 4000);
     </script>
 </body>
 </html>
