@@ -87,13 +87,74 @@ section .row{
     background-color: rgba(255, 255, 255, 0.301);
 }
 
-
 .phone-button > span{
     color: var(--branco);
     font-size: 2.6rem;
 }
 
-/* Header */
+/* ====================== MODAL ====================== */
+
+.modal-content{
+    padding-bottom: 50px;
+}
+
+.modal-content .logo-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.modal-content .logo-modal img{
+    width: 40%;
+    max-width: 310px;
+}
+
+.modal-content h4{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+
+    width: 80%;
+    margin: 0 auto 30px;
+}
+
+.modal-content .input-flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content .input-modal{
+    text-align: center;
+
+    width: 55%;
+    min-width: 310px;
+    height: 50px;
+    
+    border: 1px solid lightgray;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+    margin: 30px 0;
+    padding: 0 15px;
+}
+.modal-content .submit-modal{
+    color: white;
+    background-color: var(--primaria);
+    width: 140px;
+    height: 50px;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+}
+.modal-content .submit-modal:hover{
+    background-color: var(--primaria-claro);
+}
+
+/* ====================== Header ====================== */
 
 .header{
     background-color: var(--secundaria);
@@ -156,7 +217,7 @@ section .row{
         font-size: 2rem;
     }
 
-/* Seção 1 */
+/* ====================== Seção 1 ====================== */
 
 .section-1{
     padding: 20px 0 150px 0 !important;
@@ -326,7 +387,7 @@ section .row{
     background-color: rgba(255, 255, 255, 0);    
 }
 
-/* Seção 2 */
+/* ====================== Seção 2 ====================== */
 
 .section-2{
     position: relative;
@@ -397,7 +458,7 @@ section .row{
     bottom: -85px;
 }
 
-/* Seção 3 */
+/* ====================== Seção 3 ====================== */
 
 .section-3{
     background: var(--gradiente-radial-primario);
@@ -510,7 +571,7 @@ section .row{
     color: var(--secundaria);
 }
 
-/* Seção 4 */
+/* ====================== Seção 4 ====================== */
 
 .section-4{
     background-color: var(--secundaria);
@@ -624,7 +685,7 @@ section .row{
     z-index: 0;
 }
 
-/* Btn Wpp */
+/* ====================== Btn Wpp ====================== */
 
 .section-wpp{
     background-image: url(../images/bg-wpp.png);
@@ -703,7 +764,7 @@ section .row{
     margin: 0 20px;
 }
 
-/* Seção 5 */
+/* ====================== Seção 5 ====================== */
 
 .section-5{
     padding: 0 !important;
@@ -802,7 +863,7 @@ section .row{
     width: 80%;
 }
 
-/* Seção 6 */
+/* ====================== Seção 6 ====================== */
 
 .section-6{
     padding: 120px 0;
@@ -872,7 +933,7 @@ section .row{
     max-height: 140px;
 }
 
-/* Seção 7 */
+/* ====================== Seção 7 ====================== */
 
 .section-7{
     background-color: var(--primaria-claro);
@@ -951,7 +1012,7 @@ section .row{
     font-size: 5.6rem;
 }
 
-/* Seção 8 */
+/* ====================== Seção 8 ====================== */
 
 .section-8{
     padding: 0 !important;
@@ -1051,7 +1112,7 @@ section .row{
 }
 
 
-/* Footer */
+/* ====================== Footer ====================== */
 
 .footer{
     background-color: var(--preto);
@@ -1269,7 +1330,7 @@ section .row{
         margin: 0;
     }
 
-/* Smartphones */
+/* ====================== Smartphones ====================== */
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
@@ -1998,7 +2059,7 @@ section .row{
 
 }
 
-/* Tablets */
+/* ====================== Tablets ====================== */
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
     
@@ -2657,7 +2718,7 @@ section .row{
     }
 }
 
-/* Telas Pequenas */
+/* ====================== Telas Pequenas ====================== */
 
 @media only screen and (min-device-width : 1024px) and (max-device-width : 1340px){
     /* Seção 1 */
@@ -3033,7 +3094,7 @@ section .row{
 
 }
 
-/* Telas Maiores*/
+/* ====================== Telas Maiores ====================== */
 
 @media only screen  and (min-width : 1824px) {
 
