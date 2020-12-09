@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none !important;
+    color: unset !important;
+}
+
 textarea:focus, input:focus, select:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
@@ -744,10 +749,9 @@ section .row{
 
     font-size: 1.6rem;
     font-weight: 700;
-    color: var(--branco);
+    color: var(--branco) !important;
     text-transform: uppercase;
     text-align: center;
-
     box-shadow: rgba(0, 0, 0, 0.300) 0 0 60px 0;
 
     border-radius: 50px;
@@ -1068,7 +1072,7 @@ section .row{
     max-width: 250px;
 
     padding: 15px 20px;
-    color: var(--branco);
+    color: var(--branco) !important;
     font-size: 1.6rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -1247,7 +1251,7 @@ section .row{
         }
 
             .contato-3 > .contato-3-btn{     
-                color: white;
+                color: white !important;
                 font-size: 1rem;
                 font-weight: bold;
                 
@@ -1265,6 +1269,12 @@ section .row{
 
             .contato-3 > .contato-3-btn:hover{
                 background-color: rgb(12, 197, 12);
+            }
+
+            .contato-3 > .contato-3-btn > span{     
+                color: white;
+                font-size: 1.2rem;
+                margin-right: 5px;
             }
 
     .footer-conteudo > .bloco-sociais{
@@ -1904,8 +1914,6 @@ section .row{
 
     .section-5 .conteudo{
         height: auto;
-        background: rgb(255,100,72);
-        background: linear-gradient(45deg, rgba(255,100,72,1) 0%, rgba(250,195,0,1) 100%);
     }
     
     .section-5 .conteudo .background-s5{
@@ -1916,9 +1924,16 @@ section .row{
         padding-bottom: 50px;
         box-sizing: border-box;
         margin-bottom: 80px;
+
+        mix-blend-mode: unset !important;
     
-        background-image: url(../images/bg-s5.png);
-        background-size: cover;
+        background-image: url(../images/bg-s5.png) !important;
+        background-size: cover !important;
+    }
+
+    .card-s5{
+        background: rgb(255,100,72);
+        background: linear-gradient(45deg, rgba(255,100,72,1) 0%, rgba(250,195,0,1) 100%);
     }
 
     /* Seção 6 Smartphones*/
